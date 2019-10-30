@@ -13742,9 +13742,9 @@ dtype: int64</pre>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kde.py:487: RuntimeWarning: invalid value encountered in true_divide
+<pre>C:\Users\Pedram\Anaconda3\lib\site-packages\statsmodels\nonparametric\kde.py:487: RuntimeWarning: invalid value encountered in true_divide
   binned = fast_linbin(X, a, b, gridsize) / (delta * nobs)
-C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py:34: RuntimeWarning: invalid value encountered in double_scalars
+C:\Users\Pedram\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py:34: RuntimeWarning: invalid value encountered in double_scalars
   FAC1 = 2*(np.pi*bw/RANGE)**2
 </pre>
 </div>
@@ -13758,7 +13758,7 @@ C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.PairGrid at 0x27fe87f4be0&gt;</pre>
+<pre>&lt;seaborn.axisgrid.PairGrid at 0x18034b61b70&gt;</pre>
 </div>
 
 </div>
@@ -14014,10 +14014,12 @@ C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="What-are-the-parameters-in-general?">What are the parameters in general?<a class="anchor-link" href="#What-are-the-parameters-in-general?">&#182;</a></h3><ul>
-<li><strong>C</strong> represents the budget for your misclassification on the training data. A small c value gives you low bias but high variance. Low bias because you restrict the misclassification a lot. <strong>IMPORTANT NOTE: in scikit learn, the interpretation of C is completely reversed!!</strong></li>
+<li><strong>C</strong> represents the budget for your misclassification on the training data. A small c value gives you low bias but high variance. Low bias because you restrict the misclassification a lot. </li>
 </ul>
+<p><strong>IMPORTANT NOTE: in scikit learn, the interpretation of C is completely reversed compared to ISLR!!</strong> A large C in sklearn set up means that you are penalizing the errors more restricly so the margin will be narrower ie overfitting (small bias, big variance)
+<a href="https://scikit-learn.org/stable/modules/svm.html">https://scikit-learn.org/stable/modules/svm.html</a></p>
 <ul>
-<li><strong>gamma</strong> is the free prameter of the radial basis function (rbf). Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. </li>
+<li><strong>gamma</strong> is the free prameter of the radial basis function (rbf). Intuitively, the gamma parameter defines <strong>how far</strong> the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. </li>
 </ul>
 <p><a href="https://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html">https://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html</a></p>
 
@@ -14428,7 +14430,7 @@ Recall = 0.9
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\jahan\Anaconda3\lib\site-packages\sklearn\model_selection\_search.py:813: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+<pre>C:\Users\Pedram\Anaconda3\lib\site-packages\sklearn\model_selection\_search.py:813: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
   DeprecationWarning)
 </pre>
 </div>
@@ -15378,6 +15380,7 @@ Recall = 0.73
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Additional-links:">Additional links:<a class="anchor-link" href="#Additional-links:">&#182;</a></h3><ol>
+<li>Convex Optimization : <a href="https://www.amazon.com/dp/0521833787/?coliid=I1FTQ8R03FUUQK&amp;colid=VIHSBPX6N52B&amp;psc=1&amp;ref_=lv_ov_lig_dp_it">https://www.amazon.com/dp/0521833787/?coliid=I1FTQ8R03FUUQK&amp;colid=VIHSBPX6N52B&amp;psc=1&amp;ref_=lv_ov_lig_dp_it</a></li>
 <li>SKlearn documentation : <a href="https://scikit-learn.org/stable/modules/svm.html">https://scikit-learn.org/stable/modules/svm.html</a></li>
 <li>Performance measures (1): <a href="https://en.wikipedia.org/wiki/Confusion_matrix">https://en.wikipedia.org/wiki/Confusion_matrix</a></li>
 <li>Performance measures (2): <a href="https://blog.exsilio.com/all/accuracy-precision-recall-f1-score-interpretation-of-performance-measures/">https://blog.exsilio.com/all/accuracy-precision-recall-f1-score-interpretation-of-performance-measures/</a> </li>
