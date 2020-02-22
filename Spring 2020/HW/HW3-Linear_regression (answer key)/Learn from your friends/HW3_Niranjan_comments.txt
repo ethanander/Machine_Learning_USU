@@ -1,0 +1,2 @@
+in question 1, you are expected to estimate the RMSE_test using cross validation. I noticed that you applied CV to both train set (which is correct) and test set (which doesn't make sense). 
+Please note that in order to estimate the RMSE_test you have to apply CV to train set. We assume that test set is not observable because if it was observable then there would be no point of estimating that number. We could have directly calculated it. 
