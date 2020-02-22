@@ -1,3 +1,0 @@
-cell (77): The unit of the RMSE (0.85) is not dollars and you should not compare it with the RMSE from the linear regression model!
-
-The rest of the assignment is excellent! 
